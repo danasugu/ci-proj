@@ -40,6 +40,8 @@ class Home extends CI_Controller {
 			);
 			// echo "<pre>";
 			// var_dump($user_data);
+			$user_list = $this->db->get_where('users', array('u_name' => $user_data['u_name']));
+
 		} else{
 			redirect('home', 'refresh');
 		}
