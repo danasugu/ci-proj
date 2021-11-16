@@ -51,9 +51,9 @@ class Home extends CI_Controller {
 			$u_pass = md5($this->input->post('u_pass'));
 
 			$user_data = array(
-				$u_email => $u_email,
-				$u_name => $u_name,
-				$u_pass => $u_pass
+				'u_email' 	=> $u_email,
+				'u_name' 		=> $u_name,
+				'u_pass' 		=> $u_pass
 			);
 			// echo "<pre>";
 			// var_dump($user_data);
