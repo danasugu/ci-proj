@@ -38,8 +38,8 @@ class Home extends CI_Controller {
 				$u_name => $u_name,
 				$u_pass => $u_pass
 			);
-			echo "<pre>";
-			var_dump($user_data);
+			// echo "<pre>";
+			// var_dump($user_data);
 		} else{
 			redirect('home', 'refresh');
 		}
