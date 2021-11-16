@@ -58,7 +58,7 @@ class Home extends CI_Controller {
 			// echo "<pre>";
 			// var_dump($user_data);
 			$this->Users->insert_user($user_data);
-			// redirect('home', 'refresh');
+			redirect('home', 'refresh');
 
 		} else{
 			redirect('home', 'refresh');
