@@ -63,8 +63,8 @@ class Home extends CI_Controller {
 
 			$user_data = array(
 				'u_email' 	=> $u_email,
-				'u_name' 		=> $u_name,
-				'u_pass' 		=> $u_pass
+				'u_name' 	=> $u_name,
+				'u_pass' 	=> $u_pass
 			);
 			// echo "<pre>";
 			// var_dump($user_data);
