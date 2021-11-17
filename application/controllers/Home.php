@@ -40,12 +40,14 @@ class Home extends CI_Controller {
 			);
 			// echo "<pre>";
 			// var_dump($user_data);
-			$user_list = $this->db->get_where('users', array('u_name' => $user_data['u_name']));
-			foreach ($user_list -> result() as $user)
+			$users_list = $this->db->get_where('users', array('u_name' => $user_data['u_name']));
+			foreach ($users_list -> result() as $user)
 			{
 				if($user_data['u_name'] == $user->u_name && $user_data['u_pass'] == $user->u_pass)
 				{
 					echo 'succes!';
+				} else {
+					echo 'error';
 				}
 			}
 
