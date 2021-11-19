@@ -31,25 +31,25 @@ class Home extends CI_Controller {
 
 	public function login_process(){
 		if($this->input->post('u_login')){
-			$u_name = $this->input->post('u_name');
-			$u_pass = md5($this->input->post('u_pass'));
+						$u_name = $this->input->post('u_name');
+						$u_pass = md5($this->input->post('u_pass'));
 
-			$user_data = array(
-				$u_name => $u_name,
-				$u_pass => $u_pass
-			);
-			// echo "<pre>";
-			// var_dump($user_data);
-			$users_list = $this->db->get_where('users', array('u_name' => $user_data[ 'u_name'] ));
-			foreach ($users_list -> result() as $user)
-			{
-				if($user_data['u_name'] == $user->u_name && $user_data['u_pass'] == $user->u_pass)
-				{
-					echo 'succes!';
-				} else {
-					echo 'error';
-				}
-			}
+						$user_data = array(
+							$u_name => $u_name,
+							$u_pass => $u_pass
+						);
+						// echo "<pre>";
+						// var_dump($user_data);
+						$users_list = $this->db->get_where('users', array('u_name' => $user_data[ 'u_name'] ));
+						foreach ($users_list -> result() as $user)
+						{
+							if($user_data['u_name'] == $user->u_name && $user_data['u_pass'] == $user->u_pass)
+							{
+								echo 'succes!';
+							} else {
+								echo 'error';
+							}
+						}
 
 		} else{
 			redirect('home', 'refresh');
