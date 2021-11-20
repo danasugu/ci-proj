@@ -48,6 +48,7 @@ class Home extends CI_Controller {
 											echo 'succes!';
 										} else {
 											echo "<script>alert('Username or password not matching. Try again')</script>";
+											redirect('home', 'refresh');
 										}
 									}
 
