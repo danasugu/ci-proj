@@ -5,6 +5,5 @@ class Dash extends CI_Controller
 {
   public function index() {
     $this->load->view('dash/dash_home');
-
   }
 }
