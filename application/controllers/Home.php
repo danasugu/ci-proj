@@ -45,6 +45,7 @@ class Home extends CI_Controller {
 									{
 										if( $user_data['u_name'] == $user-> u_name && $user_data['u_pass'] == $user->u_pass )
 										{
+												$_SESSION['u_user'] = $user_data['u_user'];
 												redirect('dash', 'refresh');
 										} else {
 											echo "<script>alert('Username or password not matching. Try again')</script>";
