@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-if(!$_SESSION['u_user']){
+if( !$_SESSION['u_name'] ){
   redirect('home', 'refresh');
 }
 ?>
-
-<h1>Welcome</h1>
+Welcome, <?php echo $_SESSION['u_name']; ?>
