@@ -76,7 +76,15 @@ class Home extends CI_Controller {
 			redirect('home', 'refresh');
 
 		} else{
-			redirect('home', 'refresh');
-		}
+            redirect('home', 'refresh');
+        }
 	}
+
+
+	public function logout() {
+		session_unset();
+		session_destroy();
+		redirect('home/login_process', 'refresh');
+	}
+
 }
