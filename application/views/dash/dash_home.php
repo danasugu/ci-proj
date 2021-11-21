@@ -5,3 +5,4 @@ if( !$_SESSION['u_name'] ){
 }
 ?>
 Welcome, <?php echo $_SESSION['u_name']; ?>
+<!-- dash home -->
