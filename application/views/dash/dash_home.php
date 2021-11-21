@@ -31,7 +31,7 @@ if( !$_SESSION['u_name'] ){
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?php echo site_url('dash'); ?>">
-      Welcome, <?php echo $_SESSION['u_name']; ?>! </a>
+      <small> Hi, <?php echo $_SESSION['u_name']; ?>!</small> </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
