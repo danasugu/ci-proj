@@ -24,6 +24,7 @@ if( !$_SESSION['u_name'] ){
 $this->load->view('dash/inc/nav');
  ?>
 <!--dash nav -->
+<!-- dashboard data -->
 
 <!-- <a href=" <?php echo base_url(); ?>assets/css/bootstrap.min.css">ds</a> -->
 
