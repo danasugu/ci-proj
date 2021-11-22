@@ -25,6 +25,15 @@ $this->load->view('dash/inc/nav');
  ?>
 <!--dash nav -->
 <!-- dashboard data -->
+<div class="container">
+  <div class="row">
+<div class="col-lg-4 col-md-4">
+
+</div>
+<div class="col-lg-8 col-md-8"></div>
+  </div>
+</div>
+<!-- dashboard data -->
 
 <!-- <a href=" <?php echo base_url(); ?>assets/css/bootstrap.min.css">ds</a> -->
 
