@@ -33,7 +33,8 @@ $this->load->view('dash/inc/nav');
     Employee Actions
   </div>
   <div class="list-group">
-    <a href="#" class="list-group-item"></a>
+    <a href="#" class="list-group-item">Employees List</a>
+    <a href="#" class="list-group-item">Add Employees</a>
   </div>
 </div>
 </div>
