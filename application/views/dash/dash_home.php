@@ -28,20 +28,9 @@ $this->load->view('dash/inc/nav');
 <div class="container">
   <div class="row">
 <div class="col-lg-43 col-md-3">
-<div class="panel panel-default">
-  <div class="panel-headings">Employee Actions</div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Add Employee</a>
-    <a href="#" class="list-group-item">Employees List</a>
-  </div>
-</div>
-<div class="panel panel-default">
-  <div class="panel-headings">Jobs Actions</div>
-  <div class="list-group">
-    <a href="#" class="list-group-item">Add Job</a>
-    <a href="#" class="list-group-item">Jobs List</a>
-  </div>
-</div>
+<!-- sidebar -->
+
+<!-- sidebar -->
 </div>
 <div class="col-lg-9 col-md-9"></div>
   </div>
