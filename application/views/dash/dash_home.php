@@ -27,18 +27,16 @@ $this->load->view('dash/inc/nav');
 <!-- dashboard data -->
 <div class="container">
   <div class="row">
-<div class="col-lg-4 col-md-4">
+<div class="col-lg-43 col-md-3">
 <div class="panel panel-default">
-  <div class="panel-headings">
-    Employee Actions
-  </div>
+  <div class="panel-headings">Employee Actions</div>
   <div class="list-group">
-    <a href="#" class="list-group-item">Employees List</a>
     <a href="#" class="list-group-item">Add Employees</a>
+    <a href="#" class="list-group-item">Employees List</a>
   </div>
 </div>
 </div>
-<div class="col-lg-8 col-md-8"></div>
+<div class="col-lg-9 col-md-9"></div>
   </div>
 </div>
 <!-- dashboard data -->
