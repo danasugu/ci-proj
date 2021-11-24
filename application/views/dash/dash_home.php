@@ -29,7 +29,7 @@ $this->load->view('dash/inc/nav');
   <div class="row">
 <div class="col-lg-43 col-md-3">
 <!-- sidebar -->
-
+<?php $this->load->view('dash/inc/sidebar'); ?>
 <!-- sidebar -->
 </div>
 <div class="col-lg-9 col-md-9"></div>
