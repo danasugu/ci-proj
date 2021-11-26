@@ -18,9 +18,9 @@ class Home extends CI_Controller {
 	}
 
 	public function upload(){
-		$this->load->view('inc/header');
+		$this->load->view('dash/inc/header');
 		$this->load->view('upload');
-		$this->load->view('inc/footer');
+		$this->load->view('dash/inc/footer');
 	}
 
 	public function register(){
