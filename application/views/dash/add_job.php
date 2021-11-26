@@ -25,7 +25,7 @@ if( !$_SESSION['u_name'] ){
 	<?php
 $this->load->view('dash/inc/nav');
 ?>
-<!--dash nav -->
+	<!--dash nav -->
 
 	<!-- dashboard data -->
 	<div class="container">
@@ -39,3 +39,9 @@ $this->load->view('dash/inc/nav');
 		</div>
 	</div>
 	<!-- dashboard data -->
+	<!-- Optional JavaScript; choose one of the two! -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="<?= base_url(); ?>assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
