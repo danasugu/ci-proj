@@ -25,4 +25,17 @@ if( !$_SESSION['u_name'] ){
 	<?php
 $this->load->view('dash/inc/nav');
 ?>
-	Add Job view
+<!--dash nav -->
+
+	<!-- dashboard data -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-43 col-md-3">
+				<!-- sidebar -->
+				<?php $this->load->view('dash/inc/sidebar'); ?>
+				<!-- sidebar -->
+			</div>
+			<div class="col-lg-9 col-md-9"></div>
+		</div>
+	</div>
+	<!-- dashboard data -->
