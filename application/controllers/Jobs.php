@@ -5,7 +5,8 @@ class Jobs extends CI_Controller {
 
   public function index()
   {
-  echo 'jobs controller';
+    $this->load->view('dash/add_job');
+
   }
 
 }
