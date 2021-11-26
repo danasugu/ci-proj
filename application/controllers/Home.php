@@ -12,9 +12,9 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('inc/header');
+		$this->load->view('dash/inc/header');
 		$this->load->view('home');
-		$this->load->view('inc/footer');
+		$this->load->view('dash/inc/footer');
 	}
 
 	public function upload(){
@@ -24,9 +24,9 @@ class Home extends CI_Controller {
 	}
 
 	public function register(){
-		$this->load->view('inc/header');
+		$this->load->view('dash/inc/header');
 		$this->load->view('register');
-		$this->load->view('inc/footer');
+		$this->load->view('dash/inc/footer');
 	}
 
 	public function login_process(){
