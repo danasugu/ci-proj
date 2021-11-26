@@ -35,7 +35,14 @@ $this->load->view('dash/inc/nav');
 				<?php $this->load->view('dash/inc/sidebar'); ?>
 				<!-- sidebar -->
 			</div>
-			<div class="col-lg-9 col-md-9"></div>
+			<div class="col-lg-9 col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">Add Jobs</div>
+					<div class="panel-body">
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- dashboard data -->
