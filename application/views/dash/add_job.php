@@ -57,7 +57,7 @@ $this->load->view('dash/inc/nav');
 
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" value="Submit">
+								<input type="submit" value="Submit" class="btn btn-sm btn-success">
 							</div>
 						</div>
 						<?php
