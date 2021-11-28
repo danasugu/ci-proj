@@ -40,8 +40,8 @@ $this->load->view('dash/inc/nav');
 					<div class="panel-heading">Add Jobs</div>
 					<div class="panel-body">
 						<?php
-						form_open('url', '', $hidden);
-						 ?>
+						form_open('url','class="form-horizontal"');
+						?>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
