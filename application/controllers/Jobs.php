@@ -3,12 +3,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Jobs extends CI_Controller {
 
+  public function __construct() {
+    parent::__construct();
+    $this->load->moodel(Jobs_model);
+  }
+
   public function index()
   {
     $this->load->view('dash/add_job');
   }
 
-  public function
+  public function add_jobs() {
+    if($this->input->post['add_job'])
+    {
+      $j_name = $this->input->post['j_name'];
+    }
+  }
 
 }
 
