@@ -45,19 +45,13 @@ $this->load->view('dash/inc/nav');
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Job Name</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control input-sm" placeholder="Job Name">
+								<input type="text" name="j_name" class="form-control input-sm" placeholder="Job Name">
 							</div>
 						</div>
-						<!-- <div class="form-group">
-							<label class="col-sm-2 control-label">Job Description</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control input-sm" placeholder="Job Description">
-							</div>
-						</div> -->
 
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" value="Add Job" class="btn btn-sm btn-success">
+								<input type="submit" name="add_job" value="Add Job" class="btn btn-sm btn-success">
 							</div>
 						</div>
 						<?php
