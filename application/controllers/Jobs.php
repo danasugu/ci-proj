@@ -13,12 +13,10 @@ class Jobs extends CI_Controller {
     $this->load->view('dash/add_job');
   }
 
-  public function add_job() {
-    if($this->input->post['add_job'])
-    {
-      // $j_name = $this->input->post['j_name'];
-      echo "string";
-    }
+  public function add_job()
+  {
+    if( $this->input->post('add_job') )
+    echo "ds";
   }
 
 }

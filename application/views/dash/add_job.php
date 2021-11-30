@@ -39,8 +39,8 @@ $this->load->view('dash/inc/nav');
 				<div class="panel panel-default">
 					<div class="panel-heading">Add Jobs</div>
 					<div class="panel-body">
-						<?php
-						form_open('jobs/add-job','class="form-horizontal"');
+						<?php echo
+						form_open('jobs/add_job','class="form-horizontal"');
 						?>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Job Name</label>
