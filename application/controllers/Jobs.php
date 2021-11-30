@@ -16,7 +16,8 @@ class Jobs extends CI_Controller {
   public function add_job() {
     if($this->input->post['add_job'])
     {
-      $j_name = $this->input->post['j_name'];
+      // $j_name = $this->input->post['j_name'];
+      echo "string";
     }
   }
 
