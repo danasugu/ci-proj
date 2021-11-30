@@ -42,6 +42,22 @@ $this->load->view('dash/inc/nav');
 						<th>edit</th>
 						<th>delete</th>
 					</tr>
+
+					<?php
+					$job_list = $this->db->get('jobs');
+
+					foreach($job_list->result() as $job)
+					{ ?>
+					<tr>
+						<td><?= $job->j_id ?></td>
+						<td><?= $job->j_name ?></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<?php }
+
+					?>
+
 				</table>
 			</div>
 		</div>
