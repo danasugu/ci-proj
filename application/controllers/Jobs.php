@@ -5,7 +5,7 @@ class Jobs extends CI_Controller {
 
   public function __construct() {
     parent::__construct();
-    $this->load->moodel(Jobs_model);
+    $this->load->model('Jobs_model');
   }
 
   public function index()
