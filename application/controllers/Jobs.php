@@ -24,7 +24,8 @@ class Jobs extends CI_Controller {
       $jobs_data = array (
         'j_name' => $j_name
       );
-      $this->Jobs_model->add_job($jobs_data);
+      // var_dump($job_details);
+      $this->Jobs_model->add_job( $jobs_data );
       echo 'success!';
     }
 
