@@ -51,8 +51,8 @@ $this->load->view('dash/inc/nav');
 					<tr>
 						<td><?= $job->j_id ?></td>
 						<td><?= $job->j_name ?></td>
-						<td></td>
-						<td></td>
+						<td><a href="" class="btn btn-warning btn-block btn-xs">edit</a></td>
+						<td><a href="" class="btn btn-danger btn-block btn-xs">delete</a></td>
 					</tr>
 					<?php }
 
