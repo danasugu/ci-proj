@@ -17,15 +17,16 @@ if( !$_SESSION['u_name'] ){
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 
-	<title>Dashboard</title>
+	<title>Add Job</title>
 </head>
 
 <body>
 	<!--dash nav -->
 	<?php
 $this->load->view('dash/inc/nav');
- ?>
+?>
 	<!--dash nav -->
+
 	<!-- dashboard data -->
 	<div class="container">
 		<div class="row">
@@ -35,38 +36,33 @@ $this->load->view('dash/inc/nav');
 				<!-- sidebar -->
 			</div>
 			<div class="col-lg-9 col-md-9">
-				<table class="table table-bordered">
-					<tr>
-						<th>ID</th>
-						<th>Name</th>
-						<th>edit</th>
-						<th>delete</th>
-					</tr>
+				<div class="panel panel-default">
+					<div class="panel-heading">Add Jobs</div>
+					<div class="panel-body">
+						<?php echo
+						form_open('jobs/add_job','class="form-horizontal"');
+						?>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Job Name</label>
+							<div class="col-sm-10">
+								<input type="text" name="j_name" class="form-control input-sm" placeholder="Job Name">
+							</div>
+						</div>
 
-					<?php
-					$job_list = $this->db->get('jobs');
-
-					foreach($job_list->result() as $job)
-					{ ?>
-					<tr>
-						<td><?= $job->j_id ?></td>
-						<td><?= $job->j_name ?></td>
-						<td><a href="<?php echo site_url() ?>/jobs/update_job<?= $job->j_id ?>"
-								class="btn btn-info btn-block btn-xs">edit</a></td>
-						<td><a href="" class="btn btn-danger btn-block btn-xs">delete</a></td>
-					</tr>
-					<?php }
-
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<input type="submit" name="add_job" value="Add Job" class="btn btn-sm btn-success">
+							</div>
+						</div>
+						<?php
+						form_close();
 					?>
-
-				</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- dashboard data -->
-
-	<!-- <a href=" <?php echo base_url(); ?>assets/css/bootstrap.min.css">ds</a> -->
-
 	<!-- Optional JavaScript; choose one of the two! -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="<?= base_url(); ?>assets/js/bootstrap.bundle.min.js"></script>

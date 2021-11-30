@@ -31,9 +31,14 @@ class Jobs extends CI_Controller {
       );
       // var_dump($job_details);
       $this->Jobs_model->add_job( $jobs_data );
-      redirect('jobs','reload');
+      redirect('jobs/view_jobs','reload');
       // echo 'success!';
     }
+
+  }
+
+  public function update_job($j_id)
+  {
 
   }
 
