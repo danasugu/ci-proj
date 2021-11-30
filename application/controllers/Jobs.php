@@ -14,6 +14,11 @@ class Jobs extends CI_Controller {
     $this->load->view('dash/add_job');
   }
 
+  public function view_jobs()
+  {
+    $this->load->view('dash/job_list');
+
+  }
 
   public function add_job()
   {
@@ -26,7 +31,8 @@ class Jobs extends CI_Controller {
       );
       // var_dump($job_details);
       $this->Jobs_model->add_job( $jobs_data );
-      echo 'success!';
+      redirect('jobs','reload');
+      // echo 'success!';
     }
 
   }
