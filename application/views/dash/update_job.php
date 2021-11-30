@@ -42,15 +42,23 @@ $this->load->view('dash/inc/nav');
 						<?php echo
 						form_open('jobs/add_job','class="form-horizontal"');
 						?>
-						<!-- <div class="form-group">
-							<label class="col-sm-2 control-label">Job Name</label>
-							<div class="col-sm-10">
-								<input type="text" name="j_name" class="form-control input-sm" placeholder="Job Name">
-							</div>
-						</div> -->
+
 
 						<?php
+							$id = $this->uri->segment(3);
+							// echo $id;
 							$job_list = $this->db->get_where('jobs', array('j_id' => $id));
+							foreach ($job_list->result() as $job)
+							{ ?>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Job Name</label>
+							<div class="col-sm-10">
+								<input type="text" name="j_name" value="<?= $job->j_name ?>" class="form-control input-sm"
+									placeholder="Job Name">
+							</div>
+						</div>
+
+						<?php }
 						?>
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
