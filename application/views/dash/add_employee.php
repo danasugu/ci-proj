@@ -63,7 +63,9 @@ $this->load->view('dash/inc/nav');
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Job</label>
 							<div class="col-sm-10">
-								<select name="e_job" class="form-control input-sm"></select>
+								<select name="e_job" class="form-control input-sm">
+									<option value="-">select</option>
+								</select>
 							</div>
 						</div>
 
