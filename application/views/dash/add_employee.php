@@ -40,7 +40,7 @@ $this->load->view('dash/inc/nav');
 					<div class="panel-heading">Add Employees</div>
 					<div class="panel-body">
 						<?php echo
-						form_open('employee/add_employee_process','class="form-horizontal"');
+						form_open('employees/add_employee_process','class="form-horizontal"');
 						?>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Name</label>
