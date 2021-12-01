@@ -65,6 +65,13 @@ $this->load->view('dash/inc/nav');
 							<div class="col-sm-10">
 								<select name="e_job" class="form-control input-sm">
 									<option value="-">select</option>
+									<?php
+									$job_list = $this->db->get('jobs');
+											foreach ($job_list->result() as $job)
+											{ ?>
+									<option value="<?= $job->j_name ?>"><?= $job->j_name ?></option>
+									<?php }
+									?>
 								</select>
 							</div>
 						</div>
