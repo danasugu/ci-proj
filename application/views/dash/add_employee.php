@@ -45,19 +45,19 @@ $this->load->view('dash/inc/nav');
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Name</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_name" class="form-control input-sm" placeholder="Name">
+								<input type="text" name="e_name" class="form-control input-sm" placeholder="Name" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_email" class="form-control input-sm" placeholder="Email">
+								<input type="text" name="e_email" class="form-control input-sm" placeholder="Email" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Phone</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_phone" class="form-control input-sm" placeholder="Phone">
+								<input type="text" name="e_phone" class="form-control input-sm" placeholder="Phone" required>
 							</div>
 						</div>
 						<div class="form-group">
