@@ -53,7 +53,8 @@ $this->load->view('dash/inc/nav');
 						<td><?= $job->j_name ?></td>
 						<td><a href="<?php echo site_url() ?>/jobs/update_job/<?= $job->j_id ?>"
 								class="btn btn-info btn-block btn-xs">edit</a></td>
-						<td><a href="" class="btn btn-danger btn-block btn-xs">delete</a></td>
+						<td><a href="<?php echo site_url() ?>/jobs/delete_job/<?= $job->j_id ?>"
+								class="btn btn-danger btn-block btn-xs">delete</a></td>
 					</tr>
 					<?php }
 

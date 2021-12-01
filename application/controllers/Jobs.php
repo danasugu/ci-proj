@@ -57,4 +57,14 @@ class Jobs extends CI_Controller {
     }
   }
 
+  public function delete_job($j_id)
+  {
+    // echo $j_id;
+    $this->db->where('j_id', $j_id);
+    // $this->$this->db->where('Field / comparison', $Value);
+    $this->db->delete('jobs');
+    // echo 'deleted!';
+    redirect('jobs/view_jobs', 'refresh');
+  }
+
 }
