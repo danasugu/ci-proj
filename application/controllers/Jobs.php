@@ -66,5 +66,4 @@ class Jobs extends CI_Controller {
     // echo 'deleted!';
     redirect('jobs/view_jobs', 'refresh');
   }
-
 }
