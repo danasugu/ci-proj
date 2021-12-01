@@ -40,7 +40,15 @@ class Jobs extends CI_Controller {
   public function update_job($j_id)
   {
     $this->load->view('dash/update_job', $j_id);
+  }
 
+  public function update_process_jobs($j_id)
+  {
+    // echo $j_id;
+    if( $this->input->post('update_job'))
+    {
+
+    }
   }
 
 }

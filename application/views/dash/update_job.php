@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 if( !$_SESSION['u_name'] ){
   redirect('home', 'refresh');
 }
+$id = $this->uri->segment(3);
 ?>
 <!-- Welcome, <?php echo $_SESSION['u_name']; ?>!-->
 
@@ -40,12 +41,12 @@ $this->load->view('dash/inc/nav');
 					<div class="panel-heading">Add Jobs</div>
 					<div class="panel-body">
 						<?php echo
-						form_open('jobs/add_job','class="form-horizontal"');
+						form_open('jobs/update_process_jobs/'.$id,'class="form-horizontal"');
 						?>
 
 
 						<?php
-							$id = $this->uri->segment(3);
+							// $id = $this->uri->segment(3);
 							// echo $id;
 							$job_list = $this->db->get_where('jobs', array('j_id' => $id));
 							foreach ($job_list->result() as $job)
@@ -62,7 +63,7 @@ $this->load->view('dash/inc/nav');
 						?>
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" name="update_job" value="Update Job" class="btn btn-sm btn-success">
+								<input type="submit" name="update_job" value="Update Job" class="btn btn-sm btn-warning">
 							</div>
 						</div>
 						<?php
