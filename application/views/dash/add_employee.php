@@ -40,7 +40,7 @@ $this->load->view('dash/inc/nav');
 					<div class="panel-heading">Add Employees</div>
 					<div class="panel-body">
 						<?php echo
-						form_open('jobs/add_job','class="form-horizontal"');
+						form_open('employee/add_employee_process','class="form-horizontal"');
 						?>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Name</label>
@@ -61,7 +61,7 @@ $this->load->view('dash/inc/nav');
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="col-sm-2 control-label">Job</label>
+							<label class="col-sm-2 control-label">Select Job</label>
 							<div class="col-sm-10">
 								<select name="e_job" class="form-control input-sm">
 									<option value="-">select</option>
@@ -78,7 +78,7 @@ $this->load->view('dash/inc/nav');
 
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" name="add_job" value="Add Employee" class="btn btn-sm btn-success">
+								<input type="submit" name="add_employee" value="Add Employee" class="btn btn-sm btn-success">
 							</div>
 						</div>
 						<?php

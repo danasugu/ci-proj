@@ -14,6 +14,11 @@ class Employees extends CI_Controller {
     $this->load->view('dash/add_employee');
   }
 
+  public function add_employee_process()
+  {
+
+  }
+
 }
 
 /* End of file Employees.php */
