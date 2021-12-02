@@ -16,6 +16,8 @@ class Employees extends CI_Controller {
   public function index()
   {
 
+    this->load->view('dash/employee_list');
+
   }
 
   public function add_employee()
