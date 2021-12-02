@@ -2,7 +2,7 @@
 	<div class="panel-headings">Employee Actions</div>
 	<div class="list-group">
 		<a href="<?= site_url() ?>employees/add_employee" class="list-group-item">Add Employee</a>
-		<a href="#" class="list-group-item">Employees List</a>
+		<a href="<?= site_url(); ?>employees" class="list-group-item">Employees List</a>
 	</div>
 </div>
 <div class="panel panel-default">
