@@ -37,7 +37,16 @@ $this->load->view('dash/inc/nav');
 			</div>
 			<div class="col-lg-9 col-md-9">
 				<table class="table table-bordered">
+					<?php
+          $employee_details = $this->db->get_where('employees', array('e_id' => $id ));
+          foreach($employee_details->result() as $employee)
+          {?>
+            <tr>
+              <th>Date</th>
+            </tr>
+					<?php }
 
+          ?>
 				</table>
 			</div>
 		</div>
