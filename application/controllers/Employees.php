@@ -51,7 +51,7 @@ class Employees extends CI_Controller {
         // print_r($employee_details);
 
         $this->Employees_model->add_employee($employee_details);
-        redirect('employees', 'refresh')
+        redirect('employees', 'refresh');
     }
   }
 
