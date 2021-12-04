@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 if( !$_SESSION['u_name'] ){
   redirect('home', 'refresh');
 }
+$id=$this->uri->segment(3);
 ?>
 <!-- Welcome, <?php echo $_SESSION['u_name']; ?>!-->
 
@@ -17,7 +18,7 @@ if( !$_SESSION['u_name'] ){
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 
-	<title>Add Job</title>
+	<title>Update employee</title>
 </head>
 
 <body>
@@ -39,25 +40,35 @@ $this->load->view('dash/inc/nav');
 				<div class="panel panel-default">
 					<div class="panel-heading">Add Employees</div>
 					<div class="panel-body">
+						<?php
+						$employee_details = $this->db->get_where('employees', array('e_id' => $id ));
+						foreach ($employee_details->result() as $employee)
+						{?>
+						# code...
+
+
 						<?php echo
-						form_open('employees/add_employee_process','class="form-horizontal"');
+						form_open('','class="form-horizontal"');
 						?>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Name</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_name" class="form-control input-sm" placeholder="Name" required>
+								<input type="text" name="e_name" class="form-control input-sm" placeholder="Name"
+									value="<?= $employee->e_name ?>" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_email" class="form-control input-sm" placeholder="Email" required>
+								<input type="text" name="e_email" class="form-control input-sm" placeholder="Email"
+									value="<?= $employee->e_email ?>" required>
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Phone</label>
 							<div class="col-sm-10">
-								<input type="text" name="e_phone" class="form-control input-sm" placeholder="Phone" required>
+								<input type="text" name="e_phone" class="form-control input-sm" placeholder="Phone"
+									value="<?= $employee->e_phone ?>" required>
 							</div>
 						</div>
 						<div class="form-group">
@@ -84,6 +95,9 @@ $this->load->view('dash/inc/nav');
 						<?php
 						form_close();
 					?>
+						<?php }
+
+						?>
 					</div>
 				</div>
 			</div>
