@@ -44,6 +44,12 @@ $this->load->view('dash/inc/nav');
 					<tr>
 						<th>Date</th>
 						<td><?php echo $employee->e_date; ?></td>
+						<th>Name</th>
+						<td><?php echo $employee->e_name; ?></td>
+						<th>Email</th>
+						<td><?php echo $employee->e_email; ?></td>
+						<th>Phone</th>
+						<td><?php echo $employee->e_phone; ?></td>
 					</tr>
 					<?php }
 
