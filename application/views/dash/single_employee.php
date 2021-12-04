@@ -44,12 +44,28 @@ $this->load->view('dash/inc/nav');
 					<tr>
 						<th>Date</th>
 						<td><?php echo $employee->e_date; ?></td>
+					</tr>
+					<tr>
 						<th>Name</th>
 						<td><?php echo $employee->e_name; ?></td>
+					</tr>
+					<tr>
 						<th>Email</th>
 						<td><?php echo $employee->e_email; ?></td>
+					</tr>
+					<tr>
 						<th>Phone</th>
 						<td><?php echo $employee->e_phone; ?></td>
+					</tr>
+					</tr>
+					<tr>
+						<th>Job</th>
+						<td><?php echo $employee->e_job; ?></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<a href="" class="btn btn-info  btn-sm">edit</a>
+							<a href="" class="btn btn-danger btn-sm">delete</a></td>
 					</tr>
 					<?php }
 
