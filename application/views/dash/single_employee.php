@@ -41,9 +41,10 @@ $this->load->view('dash/inc/nav');
           $employee_details = $this->db->get_where('employees', array('e_id' => $id ));
           foreach($employee_details->result() as $employee)
           {?>
-            <tr>
-              <th>Date</th>
-            </tr>
+					<tr>
+						<th>Date</th>
+						<td><?php echo $employee->e_date; ?></td>
+					</tr>
 					<?php }
 
           ?>
