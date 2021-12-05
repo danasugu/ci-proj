@@ -49,6 +49,7 @@ class Employees extends CI_Controller {
     //  print_r($employee_details);
     $this->db->where('e_id', $e_id);
     $this->db->update('employees', $employee_details);
+    redirect('employees', 'refresh');
   }
 
   public function update_employee($e_id)

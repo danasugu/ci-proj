@@ -72,7 +72,7 @@ $this->load->view('dash/inc/nav');
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Select Job</label>
 							<div class="col-sm-10">
-								<input type="text" name="job_score" class="forms-control input-sm" value="<?= $employee->e_job ?>">
+								<input type="text" name="e_job" class="forms-control input-sm" value="<?= $employee->e_job ?>">
 							</div>
 						</div>
 
