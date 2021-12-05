@@ -46,7 +46,7 @@ $this->load->view('dash/inc/nav');
 						{?>
 
 						<?php echo
-						form_open('','class="form-horizontal"');
+						form_open('employees/update_employee_process/'.$id,'class="form-horizontal"');
 						?>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Name</label>

@@ -32,6 +32,11 @@ class Employees extends CI_Controller {
     $this->load->view('dash/add_employee');
   }
 
+  public function update_employee_process()
+  {
+    
+  }
+
   public function update_employee($e_id)
   {
 
