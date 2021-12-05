@@ -74,16 +74,7 @@ $this->load->view('dash/inc/nav');
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Select Job</label>
 							<div class="col-sm-10">
-								<select name="e_job" class="form-control input-sm">
-									<option value="-">select</option>
-									<?php
-									$job_list = $this->db->get('jobs');
-											foreach ($job_list->result() as $job)
-											{ ?>
-									<option value="<?= $job->j_name ?>"><?= $job->j_name ?></option>
-									<?php }
-									?>
-								</select>
+								<input type="text" name="job_score" class="forms-control input-sm" value="<?= $employee->e_job ?>">
 							</div>
 						</div>
 
