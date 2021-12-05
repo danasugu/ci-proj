@@ -38,14 +38,12 @@ $this->load->view('dash/inc/nav');
 			</div>
 			<div class="col-lg-9 col-md-9">
 				<div class="panel panel-default">
-					<div class="panel-heading">Add Employees</div>
+					<div class="panel-heading">Update Employee</div>
 					<div class="panel-body">
 						<?php
 						$employee_details = $this->db->get_where('employees', array('e_id' => $id ));
 						foreach ($employee_details->result() as $employee)
 						{?>
-						# code...
-
 
 						<?php echo
 						form_open('','class="form-horizontal"');

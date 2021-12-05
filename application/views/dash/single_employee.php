@@ -64,7 +64,8 @@ $this->load->view('dash/inc/nav');
 					</tr>
 					<tr>
 						<td colspan="2">
-							<a href="" class="btn btn-info  btn-sm">edit</a>
+							<a href="<?php echo site_url() ?>employees/update_employee/<?= $employee->e_id ?>"
+								class="btn btn-info  btn-sm">edit</a>
 							<a href="" class="btn btn-danger btn-sm">delete</a></td>
 					</tr>
 					<?php }

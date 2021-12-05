@@ -54,7 +54,7 @@ $this->load->view('dash/inc/nav');
 						<td><?= $employee->e_name ?></td>
 						<td><a href="<?php echo site_url() ?>/employees/single_employee/<?= $employee->e_id ?>"
 								class="btn btn-info btn-block btn-xs">details</a></td>
-						<td><a href="<?php echo site_url() ?>/employees/update_employee/<?= $employee->e_id ?>"
+						<td><a href="<?php echo site_url() ?>employees/update_employee/<?= $employee->e_id ?>"
 								class="btn btn-warning btn-block btn-xs">update</a></td>
 						<td><a href="<?php echo site_url() ?>/employees/delete_employee/<?= $employee->e_id ?>"
 								class="btn btn-danger btn-block btn-xs">delete</a></td>
