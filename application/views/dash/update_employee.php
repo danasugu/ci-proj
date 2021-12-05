@@ -80,7 +80,7 @@ $this->load->view('dash/inc/nav');
 
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" name="add_employee" value="Add Employee" class="btn btn-sm btn-success">
+								<input type="submit" name="update_employee" value="Update Employee" class="btn btn-sm btn-success">
 							</div>
 						</div>
 						<?php
