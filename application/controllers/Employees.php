@@ -82,6 +82,15 @@ class Employees extends CI_Controller {
     }
   }
 
+  public function delete_employee($e_id)
+  {
+    $this->db->where('e_id', $e_id);
+
+    $this->db->delete('employees');
+    redirect('employees', 'refresh');
+
+  }
+
 }
 
 /* End of file Employees.php */
