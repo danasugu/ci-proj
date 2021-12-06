@@ -40,7 +40,7 @@ $this->load->view('dash/inc/nav');
 						<th>ID</th>
 						<th>Name</th>
 						<th>Details</th>
-						<th>Edit</th>
+						<th>Edit/Update</th>
 						<th>Delete</th>
 					</tr>
 
@@ -55,7 +55,7 @@ $this->load->view('dash/inc/nav');
 						<td><a href="<?php echo site_url() ?>/employees/single_employee/<?= $employee->e_id ?>"
 								class="btn btn-info btn-block btn-xs">details</a></td>
 						<td><a href="<?php echo site_url() ?>employees/update_employee/<?= $employee->e_id ?>"
-								class="btn btn-warning btn-block btn-xs">update</a></td>
+								class="btn btn-warning btn-block btn-xs">edit/update</a></td>
 						<td><a href="<?php echo site_url() ?>employees/delete_employee/<?= $employee->e_id ?>"
 								class="btn btn-danger btn-block btn-xs">delete</a></td>
 					</tr>
