@@ -27,25 +27,27 @@ $this->load->view('dash/inc/nav');
  ?>
 	<!--dash nav -->
 	<!-- dashboard data -->
-	<form class="form-inline" action="<?php echo base_url() . 'admin/students'; ?>" method="post">
-		<select class="form-control" name="field">
-			<option selected="selected" disabled="disabled" value="">Filter By</option>
-			<option value="first_name">Name</option>
-			<!-- <option value="last_name">Last Name</option>
-			<option value="email">Email Name</option> -->
-		</select>
-		<input class="form-control" type="text" name="search" value="" placeholder="Search...">
-		<input class="btn btn-default" type="submit" name="filter" value="Go">
-	</form>
+
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-43 col-md-3">
+			<div class="col-lg-3 col-md-3">
 				<!-- sidebar -->
 				<?php $this->load->view('dash/inc/sidebar'); ?>
 				<!-- sidebar -->
 			</div>
 			<div class="col-lg-9 col-md-9">
+				<form class="form-inline" action="<?php echo base_url() . 'admin/students'; ?>" method="post">
+					<select class="form-control" name="field">
+						<option selected="selected" disabled="disabled" value="">Filter By</option>
+						<option value="first_name">Name</option>
+						<!-- <option value="last_name">Last Name</option>
+			<option value="email">Email Name</option> -->
+					</select>
+					<input class="form-control" type="text" name="search" value="" placeholder="Search...">
+					<input class="btn btn-default" type="submit" name="filter" value="Go">
+				</form>
+
 				<table class="table table-bordered">
 					<tr>
 						<th>ID</th>
