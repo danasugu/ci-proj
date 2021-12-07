@@ -22,11 +22,11 @@ class Employees extends CI_Controller {
         $search = $this->input->post('search');
 
         if (isset($filter) && !empty($search)) {
-            $this->load->model('students/Employees_model');
-            $data['students'] = $this->Student_Model->getStudentsWhereLike($field, $search);
+            // $this->load->model('students/Employees_model');
+            $data['students'] = $this->Employees_model->getStudentsWhereLike($field, $search);
         } else {
-            $this->load->model('students/Student_Model');
-            $data['students'] = $this->Student_Model->getStudents();
+            // $this->load->model('students/Student_Model');
+            $data['students'] = $this->Employees_model->getStudents();
         }
 
         $data['module']    = 'admin';
