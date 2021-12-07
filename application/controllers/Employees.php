@@ -26,7 +26,7 @@ class Employees extends CI_Controller {
             $data['students'] = $this->Employees_model->getStudentsWhereLike($field, $search);
         } else {
             // $this->load->model('students/Student_Model');
-            $data['students'] = $this->Employees_model->getStudents();
+            $data['employees'] = $this->Employees_model->getStudentsWhereLike($field, $search);
         }
 
         $data['module']    = 'admin';
