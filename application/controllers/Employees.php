@@ -23,7 +23,7 @@ class Employees extends CI_Controller {
 
         if (isset($filter) && !empty($search)) {
             // $this->load->model('students/Employees_model');
-            $data['students'] = $this->Employees_model->getStudentsWhereLike($field, $search);
+            $data['employees'] = $this->Employees_model->getStudentsWhereLike($field, $search);
         } else {
             // $this->load->model('students/Student_Model');
             $data['employees'] = $this->Employees_model->getStudentsWhereLike($field, $search);
