@@ -37,6 +37,10 @@ $this->load->view('dash/inc/nav');
 				<!-- sidebar -->
 			</div>
 			<div class="col-lg-9 col-md-9">
+
+			<?php echo
+						form_open('employees','class="form-horizontal"');
+						?>
 				<form class="form-inline" action="<?php echo site_url() . 'employees'; ?>" method="post">
 					<select class="form-control" name="field">
 						<option selected="selected" disabled="disabled" value="">Filter By</option>
@@ -46,7 +50,9 @@ $this->load->view('dash/inc/nav');
 					</select>
 					<input class="form-control" type="text" name="search" value="" placeholder="Search...">
 					<input class="btn btn-default" type="submit" name="filter" value="Go">
-				</form>
+			<?php
+						form_close();
+					?>
 
 				<table class="table table-bordered">
 					<tr>
