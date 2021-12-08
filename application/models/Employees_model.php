@@ -12,7 +12,7 @@ class Employees_model extends CI_Model {
 
     public function getEmployeesWhereLike($field, $search)
     {
-    $query = $this->db->like($field, $search)->orderBy('name')->get('employees');
+    $query = $this->db->like($field, $search)->orderBy('e_name')->get('employees');
     return $query->result();
     }
 

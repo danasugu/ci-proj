@@ -29,11 +29,11 @@ class Employees extends CI_Controller {
             $data['employees'] = $this->Employees_model->getEmployeesWhereLike($field, $search);
         }
 
-        $data['module']    = 'admin';
-        $data['view_file'] = 'students/view';
+        // $data['module']    = 'admin';
+        // $data['view_file'] = 'students/view';
 
-        $this->load->module('templates');
-        $this->templates->admin($data);
+        // $this->load->module('templates');
+        // $this->templates->admin($data);
 
   }
 
