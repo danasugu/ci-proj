@@ -37,7 +37,7 @@ $this->load->view('dash/inc/nav');
 				<!-- sidebar -->
 			</div>
 			<div class="col-lg-9 col-md-9">
-				<form class="form-inline" action="<?php echo base_url() . 'admin/students'; ?>" method="post">
+				<form class="form-inline" action="<?php echo site_url() . 'employees'; ?>" method="post">
 					<select class="form-control" name="field">
 						<option selected="selected" disabled="disabled" value="">Filter By</option>
 						<option value="first_name">Name</option>
