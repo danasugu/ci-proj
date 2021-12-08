@@ -24,10 +24,11 @@ class Employees extends CI_Controller {
         if (isset($filter) && !empty($search)) {
             // $this->load->model('students/Employees_model');
             $data['employees'] = $this->Employees_model->getEmployeesWhereLike($field, $search);
-        } else {
-            // $this->load->model('students/Student_Model');
-            $data['employees'] = $this->Employees_model->getEmployeesWhereLike($field, $search);
         }
+        // else {
+            // $this->load->model('students/Student_Model');
+            // $data['employees'] = $this->Employees_model->getEmployeesWhereLike($field, $search);
+        // }
 
         // $data['module']    = 'admin';
         // $data['view_file'] = 'students/view';
