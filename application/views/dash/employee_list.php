@@ -37,8 +37,12 @@ $this->load->view('dash/inc/nav');
 				<!-- sidebar -->
 			</div>
 			<div class="col-lg-9 col-md-9">
-
-			<?php echo
+				<?php
+$date = "31-07-2021";
+$new_date = date('Y-m-d', strtotime($date));
+echo $new_date;
+?>
+				<?php echo
 						form_open('employees','class="form-horizontal"');
 						?>
 				<form class="form-inline" action="<?php echo site_url() . 'employees'; ?>" method="post">
@@ -50,39 +54,39 @@ $this->load->view('dash/inc/nav');
 					</select>
 					<input class="form-control" type="text" name="search" value="" placeholder="Search...">
 					<input class="btn btn-default" type="submit" name="filter" value="Go">
-			<?php
+					<?php
 						form_close();
 					?>
 
-				<table class="table table-bordered">
-					<tr>
-						<th>ID</th>
-						<th>Name</th>
-						<th>Details</th>
-						<th>Edit/Update</th>
-						<th>Delete</th>
-					</tr>
+					<table class="table table-bordered">
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Details</th>
+							<th>Edit/Update</th>
+							<th>Delete</th>
+						</tr>
 
-					<?php
+						<?php
 					$employee_list = $this->db->get('employees');
 
 					foreach($employee_list->result() as $employee)
 					{ ?>
-					<tr>
-						<td><?= $employee->e_id ?></td>
-						<td><?= $employee->e_name ?></td>
-						<td><a href="<?php echo site_url() ?>/employees/single_employee/<?= $employee->e_id ?>"
-								class="btn btn-info btn-block btn-xs">details</a></td>
-						<td><a href="<?php echo site_url() ?>employees/update_employee/<?= $employee->e_id ?>"
-								class="btn btn-warning btn-block btn-xs">edit/update</a></td>
-						<td><a href="<?php echo site_url() ?>employees/delete_employee/<?= $employee->e_id ?>"
-								class="btn btn-danger btn-block btn-xs">delete</a></td>
-					</tr>
-					<?php }
+						<tr>
+							<td><?= $employee->e_id ?></td>
+							<td><?= $employee->e_name ?></td>
+							<td><a href="<?php echo site_url() ?>/employees/single_employee/<?= $employee->e_id ?>"
+									class="btn btn-info btn-block btn-xs">details</a></td>
+							<td><a href="<?php echo site_url() ?>employees/update_employee/<?= $employee->e_id ?>"
+									class="btn btn-warning btn-block btn-xs">edit/update</a></td>
+							<td><a href="<?php echo site_url() ?>employees/delete_employee/<?= $employee->e_id ?>"
+									class="btn btn-danger btn-block btn-xs">delete</a></td>
+						</tr>
+						<?php }
 
 					?>
 
-				</table>
+					</table>
 			</div>
 		</div>
 	</div>
